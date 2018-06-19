@@ -18,12 +18,12 @@ public class ServiceThread extends Thread{
 					logger.info("【无数据，休眠一分钟】"+illeglType);
 					sleep(60*1000);//休眠一分钟
 				}
-			} 
+			}
 			catch (Exception e) {
 				service.nullDateCount = 0;
-				logger.info(illeglType+"【E----------------程序异常，休眠1分钟】"+e.getMessage());
-				try { 
-					sleep(60*1000); 
+				logger.info(illeglType+"【E----------------程序异常，休眠1小时继续】"+e.getMessage());
+				try {
+					sleep(60*60*1000);
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

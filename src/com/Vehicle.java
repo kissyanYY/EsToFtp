@@ -1,5 +1,7 @@
 package com;
 
+import java.sql.Blob;
+
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
@@ -34,6 +36,18 @@ public class Vehicle {
 	private String esId;//Es-id
 	@DatabaseField(columnName="pname")
 	private String pname;//生成的名称
+	
+	@DatabaseField(columnName="plateClor")
+	private String plateClor;//号牌颜色 F_HPYS
+	
+	@DatabaseField(columnName="vehicleCorlor")
+	private String vehicleCorlor;//车身颜色 F_VEH_COLOR
+	
+	@DatabaseField(columnName="vehLength")
+	private String vehLength;// 
+	
+	private Blob imgBlob;
+	
 	
 	//违法类别_违法地点_行驶方向_行驶车道_违法日期_车牌号_车辆类型_车速_最高限速_图片序号
 	
@@ -132,6 +146,30 @@ public class Vehicle {
 	}
 	public void setPname(String pname) {
 		this.pname = pname;
+	}
+	public String getPlateClor() {
+		return plateClor;
+	}
+	public void setPlateClor(String plateClor) {
+		this.plateClor = plateClor;
+	}
+	public String getVehicleCorlor() {
+		return vehicleCorlor;
+	}
+	public void setVehicleCorlor(String vehicleCorlor) {
+		this.vehicleCorlor = vehicleCorlor;
+	}
+	public String getVehLength() {
+		return vehLength;
+	}
+	public void setVehLength(String vehLength) {
+		this.vehLength = vehLength;
+	}
+	public Blob getImgBlob() {
+		return imgBlob;
+	}
+	public void setImgBlob(Blob imgBlob) {
+		this.imgBlob = imgBlob;
 	}
 
 

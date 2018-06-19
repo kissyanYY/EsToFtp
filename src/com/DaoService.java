@@ -16,7 +16,9 @@ import com.j256.ormlite.support.DatabaseConnection;
 
 public class DaoService {
 	
+//	private String databaseUrl = "jdbc:oracle:thin:@172.21.229.50:1521:orcl";
 	private String databaseUrl = "jdbc:sqlite:yy.db";
+
 	private ConnectionSource connectionSource;
 	private DatabaseConnection dc ;
 	private Dao<Vehicle,String> accountDao ;

@@ -13,8 +13,8 @@ import org.elasticsearch.common.transport.InetSocketTransportAddress;
 public class EsClient {
 	private static volatile TransportClient client = null;
 
-	private static final String EsIp = "172.16.80.26";
-	private static final String EsName = "lyceshi";
+	private static final String EsIp = "172.21.229.85";
+	private static final String EsName = "elasticsearch-czjj";
 	
     public static org.elasticsearch.client.Client getClient() {
     	System.out.println("Es:"+EsIp+","+EsName);

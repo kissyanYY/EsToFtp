@@ -3,8 +3,9 @@ package utils;
 
 public  class SqlString {
 	public static String create_updateTable = 
-			"CREATE TABLE  updateTime(GXSJ_1223 VARCHAR(32),GXSJ_1240 VARCHAR(32),CONF_1223 VARCHAR(4),CONF_1240 VARCHAR(4));" +
-			"insert into updateTime(GXSJ_1223,GXSJ_1240,CONF_1223,CONF_1240) values('#SYSDATE#','#SYSDATE#','90','90');";
+			"CREATE TABLE  updateTime(GXSJ_1223 VARCHAR(32),GXSJ_6011 VARCHAR(32),GXSJ_0000 VARCHAR(32),GXSJ_1111 VARCHAR(32)," +
+			"CONF_1223 VARCHAR(4),CONF_6011 VARCHAR(4),CONF_0000 VARCHAR(4),CONF_1111 VARCHAR(4));" +
+			"insert into updateTime(GXSJ_1223,GXSJ_6011,CONF_1223,CONF_6011) values('#SYSDATE#','#SYSDATE#','#SYSDATE#','#SYSDATE#','96','98','96','98');";
 
 	public static String Select_update = 
 			"select * from updateTime;";
@@ -26,11 +27,15 @@ public  class SqlString {
 		    		  "vehicleType VARCHAR(10),"+
 		    		  "speed VARCHAR(10),"+
 		    		  "maxSpeed VARCHAR(10),"+
-		    		  "imgIndex VARCHAR(20),"+
+		    		  "imgIndex VARCHAR(2),"+
 		    		  "updateTime VARCHAR(32),"+
 		    		  "imgUrl VARCHAR(32),"+
 		    		  "esId VARCHAR(32)," +
-		    		  "pname VARCHAR(64)" +
+		    		  "pname VARCHAR(64)," +
+		    		  "plateClor VARCHAR(4)," +
+		    		  "vehicleCorlor VARCHAR(4)," +
+		    		  "vehLength VARCHAR(4)," +
+		    		  "imgBlob Blob" +
 		    		  ");";
 	
 	
